@@ -1,6 +1,6 @@
 from copy import copy
 
-from adventofcode.input_getter import get_input
+from input_getter import get_input
 
 
 class Traveler:
