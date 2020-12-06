@@ -15,6 +15,21 @@ def get_column(row_c: str) -> int:
     binary_value = int(binary_version, 2)
     return binary_value
 
+row_bin_trs = {'F': '0', 'B': '1'}
+col_bin_trs = {'R': '0', 'L': '1'}
+
+def get_row(row_c: str) -> int:
+    binary_version = row_c.replace('F', '0')
+    binary_version = binary_version.replace('B', '1')
+    binary_value = int(binary_version, 2)
+    return binary_value
+
+def get_column(row_c: str) -> int:
+    binary_version = row_c.replace('L', '0')
+    binary_version = binary_version.replace('R', '1')
+    binary_value = int(binary_version, 2)
+    return binary_value
+
 if __name__ == '__main__':
     ticket_list = get_input()
     seats_matrix = [['E']*128 for i in range(8)]
@@ -45,6 +60,7 @@ if __name__ == '__main__':
 
     print(empty_seats)
     print(92*8 + 5)
+
 
 
 
