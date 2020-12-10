@@ -1,4 +1,4 @@
-from adventofcode.input_getter import get_input
+from input_getter import get_input
 """
 byr (Birth Year)
 iyr (Issue Year)
