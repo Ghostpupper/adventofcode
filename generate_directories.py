@@ -14,7 +14,7 @@ for day in range(1, 25):
         if f'day{day}.py' not in cur_fold_dir:
             print(f"Creating {day_dir}/day{day}.py")
             with open(f"{day_dir}/day{day}.py", 'w') as new_file:
-                new_file.writelines("from adventofcode.input_getter import get_input\n")
+                new_file.writelines("from input_getter import get_input\n")
                 new_file.writelines("\n")
                 new_file.writelines("if __name__ == '__main__':\n")
                 new_file.writelines("    in_txt = get_input()\n")
@@ -28,4 +28,8 @@ for day in range(1, 25):
         if f'input.txt' not in cur_fold_dir:
             print(f"Creating {day_dir}/input.txt")
             with open(f"{day_dir}/input.txt", 'w') as new_file:
+                new_file.write("empty!")
+        if f'i2.txt' not in cur_fold_dir:
+            print(f"Creating {day_dir}/i2.txt")
+            with open(f"{day_dir}/i2.txt", 'w') as new_file:
                 new_file.write("empty!")
